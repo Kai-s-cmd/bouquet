@@ -1,0 +1,239 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bouquet</title>
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}">
+  <link rel="mask-icon" href="{% static 'images/favicon/safari-pinned-tab.svg'%}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar fixed-top" style="background-color: #FF8CBE;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="static/images/flower-bouquet-fix-color.png" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-top">
+          Bouquet
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallary">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prices">Цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="content">
+    <main class="main_content">
+      <div id="carouselGallary" class="carousel carousel-light slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselGallaryIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselGallaryIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselGallaryIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="static/images/carousel/Carousel_photo_1.jpg" class="d-block w-100 img-fluid"
+              alt="картинка с примером букета">
+          </div>
+          <div class="carousel-item">
+            <img src="static/images/carousel/Carousel_photo_2.jpg" class="d-block w-100 img-fluid"
+              alt="картинка с примером букета">
+          </div>
+          <div class="carousel-item">
+            <img src="static/images/carousel/Carousel_photo_3.jpg" class="d-block w-100 img-fluid"
+              alt="картинка с примером букета">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallary" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGallary" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Gallery -->
+      <section id="gallary">
+        <div class="gallary_container">
+          <h1 class="gallary">Галерея</h1>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <a href="https://photos.app.goo.gl/qevqwMiF2Z8zvLHEA">
+                <img src="static/images/gallary/Photo_gall_1.jpg" class="gall_photo w-100 shadow-1-strong rounded mb-4"
+                  alt="Композиция 1: Букет из зефира" />
+              </a>
+
+              <a href="https://photos.app.goo.gl/qevqwMiF2Z8zvLHEA">
+                <img src="static/images/gallary/Photo_gall_2.jpg" class="gall_photo w-100 shadow-1-strong rounded"
+                  alt="Композиция 2: Букет из зефира" />
+              </a>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <a href="https://photos.app.goo.gl/qevqwMiF2Z8zvLHEA">
+                <img src="static/images/gallary/Photo_gall_3.jpg" class="gall_photo w-100 shadow-1-strong rounded mb-4"
+                  alt="Композиция 3: Букет из зефира" />
+              </a>
+
+              <a href="https://photos.app.goo.gl/qevqwMiF2Z8zvLHEA">
+                <img src="static/images/gallary/Photo_gall_4.jpg" class="gall_photo w-100 shadow-1-strong rounded"
+                  alt="Композиция 4: Букет из зефира" />
+              </a>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <a href="https://photos.app.goo.gl/qevqwMiF2Z8zvLHEA">
+                <img src="static/images/gallary/Photo_gall_5.jpg" class="gall_photo w-100 shadow-1-strong rounded mb-4"
+                  alt="Композиция 5: Букет из зефира" />
+              </a>
+
+              <a href="https://photos.app.goo.gl/qevqwMiF2Z8zvLHEA">
+                <img src="static/images/gallary/Photo_gall_6.jpg" class="gall_photo w-100 shadow-1-strong rounded"
+                  alt="Композиция 6: Букет из зефира" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Prices -->
+      <section id="prices">
+        <div class="prices">
+          <h1 class="price">Цены</h1>
+          <div class="row">
+            <div class="card" style="width: 18rem;">
+              <img src="static/images/card/Pic_card1.jpg" class="card-img-top" alt="Маленький букет - диаметр 20см">
+              <div class="card-body">
+                <h5 class="card-title">Маленький букет</h5>
+                <p class="card-text">Маленький зефирный букет диаметром 20 см. Уникальное сочетание нежных ароматов и
+                  вкусов, созданное с любовью к деталям. Порадуйте себя или своих близких этим маленьким чудом, которое
+                  станет прекрасным подарком для любого случая.</p>
+                <a href="#" class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Цена: 1000 руб</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="static/images/card/Pic_card2.jpg" class="card-img-top" alt="Средний букет - диаметр 25см">
+              <div class="card-body">
+                <h5 class="card-title">Средний букет</h5>
+                <p class="card-text">"Очарование величины: изысканный средний зефирный букет диаметром 25 см. Насыщенные
+                  цвета, нежный вкус и изысканная красота зефира, сплетенные в прекрасную композицию. Идеальное
+                  сочетание стиля, вкуса и утонченности для важных моментов в жизни."</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Цена: 1500 руб</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="static/images/card/Pic_card3.jpg" class="card-img-top" alt="Большой букет - диаметр 30см">
+              <div class="card-body">
+                <h5 class="card-title">Большой букет</h5>
+                <p class="card-text">"Впечатляющая грандиозность: большой зефирный букет диаметром 30 см. Роскошные
+                  цветочные композиции, пропитанные сладким волшебством зефира. Незабываемый подарок, который создаст
+                  яркие эмоции и запомнится на долгое время. "</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Цена: 2200 руб</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Popup form -->
+        <form method="post" action="{% url 'send_email' %}">
+          {% csrf_token %}
+          <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Заказ</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Имя</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="mb-3">
+                      <label for="number" class="form-label">Номер телефона</label>
+                      <input type="text" class="form-control" id="number" name="number" pattern="[0-9]+" title="Пожалуйста вводите только цифры" placeholder="Введите Ваш номер телефона">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Сообщение</label>
+                      <textarea class="form-control" id="message" name="message" rows="3"
+                        placeholder="Напишите когда с Вами лучше связаться для уточнения деталей"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="py-2">
+        <ul class="nav social-media justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <section id="contacts">
+              <span class="contacts px-2">Контакты - ></span>
+            </section>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/+79276646473" class="link-footer px-2 fab fa-telegram">
+              <span class="social-name">Telegram</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://wa.me/+79276646473" class="link-footer px-2 fab fa-whatsapp">
+              <span class="social-name">WhatsApp</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto:lenayar67@gmail.com" class="link-footer px-2 fas fa-envelope">
+              <span class="social-name">E-mail</span>
+            </a>
+          </li>
+        </ul>
+        <div class="creator text-center">
+          <a href="https://github.com/Kai-s-cmd" class="link-secondary opacity-75 link-offset-2 fab fa-github">
+            <span class="creator-text">Create by Kai-s-cmd</span>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

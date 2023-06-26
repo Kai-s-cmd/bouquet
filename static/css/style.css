@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Bubbles";
+  src: url('/static/fonts/RubikBubbles-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sniglet";
+  src: url('/static/fonts/Sniglet-ExtraBold.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-family: "Bubbles", "Sniglet", sans-serif;
+  color: white;
+}
+
+.nav-link, .nav-link-active {
+  font-family: "Bubbles", "Sniglet", sans-serif;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border-color: rgb(255,255,255);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
+
+.gallary {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Bubbles", "Sniglet", serif;
+  color: #FF8CBE
+}
+
+.overlay {
+  background: linear-gradient(45deg, hsla(168, 85%, 52%, 0), hsla(263, 88%, 45%, 0));
+  transition: 0.3s ease;
+}
+
+.overlay:hover {
+  background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.5), hsla(263, 88%, 45%, 0.5));
+}
+
+
+.carousel .carousel-item {
+  height: 720px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+.gallary_container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gall_photo:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.prices {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+}
+
+.card-img-top {
+  margin-top: 12px;
+}
+
+.price {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Bubbles", "Sniglet", serif;
+  color: #FF8CBE
+}
+
+.modal {
+  font-family: "Bubbles", "Sniglet", serif;
+  font-size: 17px;
+  color: #FF8CBE
+}
+
+.form-control {
+  color: #FF8CBE !important;
+  font-size: 15px;
+}
+
+.card-body {
+  font-family: "Bubbles", "Sniglet", serif;
+  font-size: 15px;
+  color: #FF8CBE
+}
+
+.btn-primary {
+  background-color: #FF8CBE;
+  border-color: #FF8CBE;
+}
+
+.btn-primary:hover {
+  background-color: #f762a2;
+  border-color: #f762a2;
+}
+
+.btn-primary:active{
+  background-color: #f762a2 !important;
+  border-color: #f762a2 !important;
+}
+
+.footer {
+  background-color: #FF8CBE;
+}
+
+.link-footer {
+  text-decoration: none;
+  font-family: "Bubbles", "Sniglet", sans-serif;
+  color: white;
+}
+
+.link-footer:hover {
+  color: black;
+}
+
+.social-name {
+  font-family: "Bubbles", "Sniglet", sans-serif;
+}
+
+.contacts {
+  font-family: "Bubbles", "Sniglet", sans-serif;
+  color: white;
+}
+
+.creator-text {
+  margin-left: 5px;
+  font-size: 15px;
+  
+}
+
+.link-secondary {
+  text-decoration: none;
+}
