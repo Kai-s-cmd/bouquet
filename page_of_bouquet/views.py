@@ -4,24 +4,6 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
 
 
-# def send_email(request):
-#     name = request.POST.get('name')
-#     number = request.POST.get('number')
-#     message = request.POST.get('message')
-
-#     if name and number and message:
-#         try:
-#             send_mail('Новый заказ',
-#                       f'Имя: {name}\nНомер телефона: {number}\n, Сообщение: {message}', 'arvel523@gmail.com', ["arvel523@gmail.com"])
-#         except BadHeaderError:
-#             return HttpResponse("Invalid header found.")
-#         return HttpResponseRedirect("/thanks/")
-#     else:
-#         # In reality we'd use a form class
-#         # to get proper validation errors.
-#         return HttpResponse("Make sure all fields are entered and valid.")
-
-
 def send_email(request):
     name = request.POST.get("name")
     number = request.POST.get("number")
