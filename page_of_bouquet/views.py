@@ -13,9 +13,9 @@ def send_email(request):
         try:
         # Send the email
             send_mail(
-                "New Order",
+                "Новый заказ букета!",
                 f"Новый заказ\nИмя: {name}\nНомер телефона: {number}\nСообщение: {message}", settings.EMAIL_HOST_USER,
-                [settings.EMAIL_HOST_USER],  # List of recipient email addresses
+                ["lenayar67@gmail.com"],  # List of recipient email addresses
                 fail_silently=False,
             )
         except BadHeaderError:
