@@ -1,3 +1,4 @@
+from decouple import config
 """
 Django settings for django_project project.
 
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-!e*0n)8)z0aok)gdpx%36&a1(3ie(1h#+71n781pk9+(h8576s"
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
